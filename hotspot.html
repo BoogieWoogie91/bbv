@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="css/style — copy.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="fullPage.js-master/src/fullpage.css"/>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <title>Hotspot</title>
+</head>
+
+<header id="header">
+    <!-- Button trigger modal -->
+    <button type="button" class="burger" data-toggle="modal" data-target=".modal">
+        <i class="fas fa-bars" id="burgerLines"></i>
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img src="img/logoWhite.svg">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="anchorContainer">
+                        <ul>
+                            <li><a href="#"><p>TOM TOM</p></a></li>
+                            <li><a href="#"><p>HOTSPOT</p></a></li>
+                            <li><a href="#"><p>JUMBO</p></a></li>
+                            <li><a href="#"><p>JIRAF</p></a></li>
+                            <li><a href="#"><p>FEATURES</p></a></li>
+                            <li><a href="#"><p>MEDIABOARDS MAP</p></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<body>
+
+
+
+<div id="fullpage" class="fullpage-wrapper">
+
+    <div class="section hotspotFirst" id="hotspotFirst" data-anchor="hotspotFirst">
+        <img src="img/logoWhite.svg">
+        <div class="content_414">
+            <div class="block_inner">
+                <h1><img src="img/hotSpotTitle.png"></h1>
+                <p>New revolutionary product with<br>internet efficiency</p>
+                <div class="button_wrap">
+                    <button data-toggle="modal" data-target=".modalContact" onclick="turn_invisible('header')";>Contact US</button>
+                    <!-- Modal -->
+                    <div class="modalContact fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1>Свяжитесь с нами</h1>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="turn_visible('header');">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <input type="text" name="name" placeholder="ИМЯ">
+                                        <input type="text" name="Company Name" placeholder="НАЗВАНИЕ КОМПАНИИ">
+                                        <input type="text" name="Phone" placeholder="НОМЕР ТЕЛЕФОНА">
+                                        <input class="messageInput" type="text" name="Comments" placeholder="Сообщение">
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button onclick="turn_visible('header');" data-dismiss="modal" type="submit">Отправить</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="BW">Price list</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section hotspotSecond" id="hotspotSecond">
+        <img src="img/logoRed.svg">
+        <div class="content_414">
+            <div class="block_inner">
+                <p>We installed<br>in Population Service Centre</p>
+                <div class="divWithButtons">
+                    <button class="veryActiveButton" id="button_1" onclick="turn_visible('forButton_1'); turn_invisible('forButton_2'); turn_invisible('forButton_3'); turn_invisible('forButton_4');">
+                        <img src="img/display.png">
+                        <p>Display</p>
+                    </button>
+                    <button id="button_2" id="button_1" onclick="turn_visible('forButton_2'); turn_invisible('forButton_1'); turn_invisible('forButton_3'); turn_invisible('forButton_4');">
+                        <img src="img/camerashutter.png">
+                        <p>Cameras</p>
+                    </button>
+                    <button id="button_3" id="button_1" onclick="turn_visible('forButton_3'); turn_invisible('forButton_1'); turn_invisible('forButton_2'); turn_invisible('forButton_4');">
+                        <img src="img/wifi.png">
+                        <p>Wi-fi</p>
+                    </button>
+                    <button id="button_4" id="button_1" onclick="turn_visible('forButton_4'); turn_invisible('forButton_1'); turn_invisible('forButton_2'); turn_invisible('forButton_3');">
+                        <img src="img/code-fork-symbol.png">
+                        <p>Software</p>
+                    </button>
+                </div>
+                <div class="showBlock">
+                    <div class="forButton_1" id="forButton_1">
+                        <div class="showContainer">
+                            <div id="show_vertical" class="show_vertical">
+                                <div class="flexy">
+                                    <img class="staticOne" src="img/coke-taste-the-feeling-13.png">
+                                    <div class="changable">
+                                        <img id="one" src="img/one.png">
+                                        <img id="two" src="img/two.png">
+                                        <img id="three" src="img/three.png">
+                                        <img id="four" src="img/four.png">
+                                        <img id="five" src="img/five.png">
+                                        <img id="six" src="img/six.png">
+                                    </div>
+                                </div>
+                                <div class="buttonBlock">
+                                    <button id="button_5" class="veryActiveButton" onclick="turn_visible('one'); turn_invisible('two'); turn_invisible('three'); turn_invisible('four'); turn_invisible('five'); turn_invisible('six');"><img id="button_one" src="img/sec.png"></button>
+                                    <button id="button_6" onclick="turn_visible('two'); turn_invisible('one'); turn_invisible('three'); turn_invisible('four'); turn_invisible('five'); turn_invisible('six');"><img id="button_two" src="img/sec 2.png"></button>
+                                    <button id="button_7" onclick="turn_visible('three'); turn_invisible('one'); turn_invisible('two'); turn_invisible('four'); turn_invisible('five'); turn_invisible('six');"><img id="button_three" src="img/sec 3.png"></button>
+                                    <button id="button_8" onclick="turn_visible('four'); turn_invisible('one'); turn_invisible('two'); turn_invisible('three'); turn_invisible('five'); turn_invisible('six');"><img id="button_four" src="img/sec 4.png"></button>
+                                    <button id="button_9" onclick="turn_visible('five'); turn_invisible('one'); turn_invisible('two'); turn_invisible('three'); turn_invisible('four'); turn_invisible('six');"><img id="button_five" src="img/sec 5.png"></button>
+                                    <button id="button_10" onclick="turn_visible('six'); turn_invisible('one'); turn_invisible('two'); turn_invisible('three'); turn_invisible('four'); turn_invisible('five');"><img id="button_six" src="img/sec 6.png"></button>
+                                </div>
+                            </div>
+                            <div id="show_horizontal" class="show_horizontal">
+                                <img src="img/display2_1.png">
+                                <img src="img/display2_2.png">
+                                <img src="img/display2_3.png">
+                                <img src="img/display2_4.png">
+                                <img src="img/display2_5.png">
+                              </div>
+                            <div class="button_wrap_1">
+                                <button id="button_11"  onclick="turn_visible('show_horizontal'); turn_invisible('show_vertical');" class="veryActiveButton">Horizontal</button>
+                                <button id="button_12" onclick="turn_visible('show_vertical'); turn_invisible('show_horizontal');">Vertical</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="forButton_2" id="forButton_2">
+                        <div class="imgWrap">
+                            <img src="img/cameras.png">
+                        </div>
+                    </div>
+                    <div class="forButton_3" id="forButton_3">
+                        <div class="imgWrap">
+                            <img src="img/wifi (1).png">
+                        </div>
+                        <p>В отделениях работает бесплатный Wi-Fi.<br>При входе в сеть посетитель еще раз увидит ваш рекламный баннер или перейдет на сайт рекламодателя. </p>
+                    </div>
+                    <div class="forButton_4" id="forButton_4">
+                        <div class="imgWrap">
+                            <img src="img/software.png">
+                        </div>
+                        <p>Оборудование контролируется единой программой, которая позволяет получать отчет об эффективности рекламы.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section hotspotThird" id="hotspotThird">
+        <img src="img/logoRed.svg">
+        <div class="content_414">
+            <div class="block_inner">
+                <h1>How it Works!</h1>
+                <div class="row justify-content-around">
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                        <div class="imgWrap"><img src="img/coladudes.png"></div>
+                        <h5>Visual Contact</h5>
+                        <p>First interaction with the potential customer.</p>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                        <div class="imgWrap"><img src="img/sds.png"></div>
+                        <h5>Registration</h5>
+                        <p>Short registration form in order to get access to internet</p>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                        <div class="imgWrap"><img src="img/iphoneadca 6 mockup (isaacfifth.me).png"></div>
+                        <h5>Go on site</h5>
+                        <p>Redirect to the client’s web-site</p>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                        <div class="imgWrap"><img src="img/gs_56afab35-0210-4fb8-b825-19ab0a771fd0.png"></div>
+                        <h5>Purchase</h5>
+                        <p>Buying the targeted product via web-site.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="section fp-auto-height tom-tomFooter">
+        <div class="content_366">
+            <div class="block_inner">
+                <p>Contact us and you can also download<br>the full price list of our products.</p>
+                <div class="button_wrap">
+                    <button data-toggle="modal" data-target=".modalContactForFooter" onclick="turn_invisible('header')";>Contact us</button>
+                    <button class="priceList">Price list</button>
+                </div>
+            </div>
+        </div>
+        <div class="backScroller">
+            <div class="wrapper">
+                <div class="textWrap">
+                    <p>UP TO TOP</p>
+                </div>
+                <button>
+                    <a href="#hotspotFirst"><i class="fas fa-angle-up"></i></a>
+                </button>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<!-- Modal -->
+<div class="modalContactForFooter fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1>Свяжитесь с нами</h1>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="turn_visible('header');">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <input type="text" name="name" placeholder="ИМЯ">
+                    <input type="text" name="Company Name" placeholder="НАЗВАНИЕ КОМПАНИИ">
+                    <input type="text" name="Phone" placeholder="НОМЕР ТЕЛЕФОНА">
+                    <input class="messageInput" type="text" name="Comments" placeholder="Сообщение">
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button onclick="turn_visible('header');" data-dismiss="modal" type="submit">Отправить</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+<!-- Fullpage JS -->
+<script type="text/javascript" src="fullPage.js-master/src/fullpage.js"></script>
+
+
+<script>
+    new fullpage('#fullpage', {
+        //options here
+        autoScrolling: true,
+        scrollHorizontally: true,
+        licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
+        afterLoad: function( section, origin, destination, direction){
+            if(origin.index == 0){
+                $('#burgerLines').addClass('white');
+            } else if (origin.index == 1) {
+                $('#burgerLines').removeClass('white');
+            } else if (origin.index == 2) {
+                $('#burgerLines').removeClass('white');
+            } else if (origin.index == 3) {
+                $('#burgerLines').removeClass('white');
+            }
+        }
+    });
+</script>
+
+
+<script>
+    $('#exampleModalCenter').modal({
+        backdrop: false,
+        focus: false,
+        show: false
+    })
+</script>
+
+<script>
+    $('#exampleModalCenter').modal({
+        backdrop: false,
+        focus: false,
+        show: false
+    })
+</script>
+
+<script>
+    $('#button_1').on('click', function(){
+        $('#button_2').removeClass('veryActiveButton');
+        $('#button_3').removeClass('veryActiveButton');
+        $('#button_4').removeClass('veryActiveButton');
+        $(this).addClass('veryActiveButton');
+    });
+</script>
+
+<script>
+    $('#button_2').on('click', function(){
+        $('#button_1').removeClass('veryActiveButton');
+        $('#button_3').removeClass('veryActiveButton');
+        $('#button_4').removeClass('veryActiveButton');
+        $(this).addClass('veryActiveButton');
+    });
+</script>
+
+<script>
+    $('#button_3').on('click', function(){
+        $('#button_1').removeClass('veryActiveButton');
+        $('#button_2').removeClass('veryActiveButton');
+        $('#button_4').removeClass('veryActiveButton');
+        $(this).addClass('veryActiveButton');
+    });
+</script>
+
+<script>
+    $('#button_4').on('click', function(){
+        $('#button_1').removeClass('veryActiveButton');
+        $('#button_2').removeClass('veryActiveButton');
+        $('#button_3').removeClass('veryActiveButton');
+        $(this).addClass('veryActiveButton');
+    });
+</script>
+
+<script>
+    $('#button_5').on('click', function(){
+        $('#button_6').removeClass('veryActiveButton');
+        $('#button_7').removeClass('veryActiveButton');
+        $('#button_8').removeClass('veryActiveButton');
+        $('#button_9').removeClass('veryActiveButton');
+        $('#button_10').removeClass('veryActiveButton');
+        $(this).addClass('veryActiveButton');
+    });
+</script>
+
+<script>
+    $('#button_6').on('click', function(){
+        $('#button_5').removeClass('veryActiveButton');
+        $('#button_7').removeClass('veryActiveButton');
+        $('#button_8').removeClass('veryActiveButton');
+        $('#button_9').removeClass('veryActiveButton');
+        $('#button_10').removeClass('veryActiveButton');
+        $(this).addClass('veryActiveButton');
+    });
+</script>
+
+<script>
+    $('#button_7').on('click', function(){
+        $('#button_5').removeClass('veryActiveButton');
+        $('#button_6').removeClass('veryActiveButton');
+        $('#button_8').removeClass('veryActiveButton');
+        $('#button_9').removeClass('veryActiveButton');
+        $('#button_10').removeClass('veryActiveButton');
+        $(this).addClass('veryActiveButton');
+    });
+</script>
+
+<script>
+    $('#button_8').on('click', function(){
+        $('#button_5').removeClass('veryActiveButton');
+        $('#button_6').removeClass('veryActiveButton');
+        $('#button_7').removeClass('veryActiveButton');
+        $('#button_9').removeClass('veryActiveButton');
+        $('#button_10').removeClass('veryActiveButton');
+        $(this).addClass('veryActiveButton');
+    });
+</script>
+
+<script>
+    $('#button_9').on('click', function(){
+        $('#button_5').removeClass('veryActiveButton');
+        $('#button_6').removeClass('veryActiveButton');
+        $('#button_7').removeClass('veryActiveButton');
+        $('#button_8').removeClass('veryActiveButton');
+        $('#button_10').removeClass('veryActiveButton');
+        $(this).addClass('veryActiveButton');
+    });
+</script>
+
+<script>
+    $('#button_10').on('click', function(){
+        $('#button_5').removeClass('veryActiveButton');
+        $('#button_6').removeClass('veryActiveButton');
+        $('#button_7').removeClass('veryActiveButton');
+        $('#button_8').removeClass('veryActiveButton');
+        $('#button_9').removeClass('veryActiveButton');
+        $(this).addClass('veryActiveButton');
+    });
+</script>
+
+
+<script>
+    $('#button_11').on('click', function(){
+        $('#button_12').removeClass('veryActiveButton');
+
+        $(this).addClass('veryActiveButton');
+    });
+</script>
+
+<script>
+    $('#button_12').on('click', function(){
+        $('#button_11').removeClass('veryActiveButton');
+
+        $(this).addClass('veryActiveButton');
+    });
+</script>
+
+<script type="text/javascript">
+    function turn_visible(id) {
+        let e = document.getElementById(id);
+        if(e.style.display == 'none')
+            e.style.display = 'block';
+        else
+            e.style.display = 'block';
+    }
+</script>
+
+<script type="text/javascript">
+    function turn_invisible(id) {
+        let e = document.getElementById(id);
+        if(e.style.display == 'block')
+            e.style.display = 'none';
+        else
+            e.style.display = 'none';
+    }
+</script>
+
+
+</body>
+
+
+</html>
